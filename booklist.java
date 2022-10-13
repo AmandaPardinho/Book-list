@@ -11,13 +11,16 @@ public Class BookList {
             //200 countries use ISBN
             //take isbl number, add it in books' list
             //draw a book
-        Integer isbl;
+        //Integer isbl;
 
 
-        List<Integer> books = new ArrayList<>();
+        /*List<Integer> books = new ArrayList<>();
         for(int i = 0; i < books.size(); i++){
            books.add(isbl);
-        }
+        }*/
+
+        JOptionPane.showInputDialog("What is the book name?");
+        
 
 
 

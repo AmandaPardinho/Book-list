@@ -1,4 +1,4 @@
-package com.example.bookinterface;
+package booklist.java.bookinterface;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

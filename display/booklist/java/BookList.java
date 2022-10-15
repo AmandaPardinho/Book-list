@@ -11,24 +11,38 @@ public class BookList{
     }
 
     public static void setBook(String book){
-        JOptionPane.showMessageDialog(null, "Welcome to Pards' Library", "Pards' Library",
-                JOptionPane.INFORMATION_MESSAGE);
+        Integer i = -1;
 
-        book = JOptionPane.showInputDialog(null, "Enter a book name: ","Pards' Library",
+        book = JOptionPane.showInputDialog(null, "Welcome to Pards' Library!\nPlease enter a book name:\n","Pards' Library",
                 JOptionPane.QUESTION_MESSAGE);
-        if(!book = null){
-            JOptionPane.showMessageDialog(null, "Book " + user + " was add successfully!",
-                    "Pards' Library", JOptionPane.INFORMATION_MESSAGE);
+
+        JOptionPane.showConfirmDialog(null, "Is " + book + " correct?", "Pards' Library",
+                JOptionPane.YES_NO_CANCEL_OPTION);
+
+        if(i == 0){
+            JOptionPane.showMessageDialog(null, book + " was add successfully!","Pards' " +
+                    "Library", JOptionPane.INFORMATION_MESSAGE);
         }else{
-            while(user.isEmpty()){
-                JOptionPane.showMessageDialog(null, "Please enter a book name.",
+            while(i == 1){
+                JOptionPane.showMessageDialog(null, "Please enter the correct book name.",
                         "Pards' Library", JOptionPane.INFORMATION_MESSAGE);
-                JOptionPane.showInputDialog(null, "Enter a book name: ",
+                JOptionPane.showInputDialog(null, "Enter the correct book name: ",
                         "Pards' Library", JOptionPane.QUESTION_MESSAGE);
             }
         }
-        JOptionPane.showMessageDialog(null, "Is " + book + " correct?",
-                "Pards' Library", JOptionPane.QUESTION_MESSAGE);
+
+        if(i == 2){
+            JOptionPane.showConfirmDialog(null, "Would you like to add another book?",
+                    "Pards' Library", JOptionPane.YES_NO_OPTION);
+            if(i == 1){
+                JOptionPane.showInputDialog(null, "Enter a book name: ","Pards' Library",
+                        JOptionPane.QUESTION_MESSAGE);
+            }else{
+                JOptionPane.showMessageDialog(null, "Thank you for your effort. Have a nice day!",
+                        "Pards' Library", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
+
     }
     public static void main(String[]args){
        setBook(book);

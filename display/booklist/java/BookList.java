@@ -18,13 +18,13 @@ public class BookList{
                 JOptionPane.INFORMATION_MESSAGE);
 
         String user = JOptionPane.showInputDialog(null, "Enter a book name: ",
-                "Pards' Library", JOptionPane.QUESTION_MESSAGE);
+                "Pards' Library", JOptionPane.QUESTION_MESSAGE).;
 
-        if((user != null) && (user.length() > 0)){
+        if(!user.isEmpty()){
             JOptionPane.showMessageDialog(null, "Book " + user + " was add successfully!",
                     "Pards' Library", JOptionPane.INFORMATION_MESSAGE);
         }else{
-            while(!(user.length() > 0)){
+            while(user.isEmpty()){
                 JOptionPane.showMessageDialog(null, "Please enter a book name.",
                         "Pards' Library", JOptionPane.INFORMATION_MESSAGE);
                 JOptionPane.showInputDialog(null, "Enter a book name: ",

@@ -1,26 +1,22 @@
 package display.booklist.java;
 
-import java.util.*;
 import javax.swing.JOptionPane;
 
 public class BookList{
-    public static void main(String[]args){
 
-        Integer isbn;
-        int answer;
-        String bookName;
+    private static String book, bookName;
 
-        Scanner scanner = new Scanner(System.in);
+    public static String getBook(String bookName){
+        return bookName;
+    }
 
-        List<String>book = new ArrayList<>();
-
+    public static void setBook(String book){
         JOptionPane.showMessageDialog(null, "Welcome to Pards' Library", "Pards' Library",
                 JOptionPane.INFORMATION_MESSAGE);
 
-        String user = JOptionPane.showInputDialog(null, "Enter a book name: ",
-                "Pards' Library", JOptionPane.QUESTION_MESSAGE).;
-
-        if(!user.isEmpty()){
+        book = JOptionPane.showInputDialog(null, "Enter a book name: ","Pards' Library",
+                JOptionPane.QUESTION_MESSAGE);
+        if(!book = null){
             JOptionPane.showMessageDialog(null, "Book " + user + " was add successfully!",
                     "Pards' Library", JOptionPane.INFORMATION_MESSAGE);
         }else{
@@ -31,5 +27,12 @@ public class BookList{
                         "Pards' Library", JOptionPane.QUESTION_MESSAGE);
             }
         }
+        JOptionPane.showMessageDialog(null, "Is " + book + " correct?",
+                "Pards' Library", JOptionPane.QUESTION_MESSAGE);
+    }
+    public static void main(String[]args){
+       setBook(book);
+
+       getBook(bookName);
     }
 }

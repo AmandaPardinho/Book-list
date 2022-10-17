@@ -4,13 +4,13 @@ import javax.swing.JOptionPane;
 
 public class BookList{
     public static void setBook(){
-        String book1 = null;
-        String book2 = null;
-        String book3 = null;
-        Integer answer1 = -1;
-        Integer answer2 = -1;
-        Integer answer3 = -1;
-        Integer answer4 = -1;
+        String book1;
+        String book2;
+        String book3;
+        Integer answer1;
+        Integer answer2;
+        Integer answer3;
+        Integer answer4;
 
         book1 = JOptionPane.showInputDialog(null, "Welcome to Pards' Library!\nPlease enter a " +
             "book name:","Pards' Library", JOptionPane.QUESTION_MESSAGE);

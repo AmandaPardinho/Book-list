@@ -1,7 +1,7 @@
 # Book catalog
 
 ## Abstract
-> This project will simulate a library catalog and allow user interection.
+> This project will simulate a library catalog and allow user interaction.
 ---
 
 ## Library
